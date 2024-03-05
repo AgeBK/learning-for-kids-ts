@@ -8,7 +8,7 @@ import { words } from "../../data/words";
 
 type SpellingProps = {
   submit: (answer: string, userAnswer: string) => void;
-  userResultLength: number;
+  userResults: UserResultProps[];
   setIsError: (isError: boolean) => void;
 };
 
@@ -23,7 +23,7 @@ type ResultProps = {
 const unSplashAccessKey = "WwQoe_p8T_CLABx_Ay32MvDbK-FOc9vG-j43s2WpIdU";
 const unsplash = createApi({ accessKey: unSplashAccessKey });
 
-const Spelling = ({ submit, userResultsLength, setIsError }: SpellingProps) => {
+const Spelling = ({ submit, userResults, setIsError }: SpellingProps) => {
   const [dataFetch, setDataFetch] = useState<{
     data: DataProps[];
     loading: boolean;
@@ -51,7 +51,7 @@ const Spelling = ({ submit, userResultsLength, setIsError }: SpellingProps) => {
             id,
             urls: { thumb: image },
             alt_description: alt,
-          }: ResultProps):DataProps => {
+          }: ResultProps): DataProps => {
             return { id, image, alt };
           }
         );
@@ -67,7 +67,7 @@ const Spelling = ({ submit, userResultsLength, setIsError }: SpellingProps) => {
         console.log(e);
         setIsError(true);
       });
-  }, [userResultsLength, setIsError]);
+  }, [userResults, setIsError]);
 
   const handleAnswers = (val: string, index: number) => {
     const newAnswer = [...userAnswer];

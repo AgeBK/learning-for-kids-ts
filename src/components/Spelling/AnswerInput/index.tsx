@@ -21,8 +21,6 @@ const AnswerInput = ({
 }: AnswerInputProps) => {
   useEffect(() => {
     // update focus each time a letter is entered
-    console.log(answerRef.current);
-
     if (answerRef.current) answerRef.current.focus();
   }, [answerRef, userAnswer]);
 

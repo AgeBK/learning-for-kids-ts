@@ -29,8 +29,6 @@ export const Challenge = memo(
     const operations: string[] = ["Addition", "Subtraction"];
 
     const handleClick = (val: string) => {
-      console.log("handleClick");
-
       if (val !== challenge) {
         setSpellingBG(val === "Spelling");
         setChallenge(val);

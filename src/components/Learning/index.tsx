@@ -116,7 +116,7 @@ function Learning({ setSpellingBG }: LearningProps): JSX.Element {
           {step1 && step2 && !isMaths && (
             <Spelling
               submit={submit}
-              userResultLength={userResults.length} // TODO: Do I need to pass whole object
+              userResults={userResults}
               setIsError={setIsError}
             />
           )}

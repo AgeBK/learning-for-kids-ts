@@ -8,7 +8,7 @@ I want the user to be able to choose between either maths or spelling and either
 
 # What I built
 
-So, I stuck to the original idea, the user has a choice of doing maths (addition or subtraction) or spelling. After choosing which challenge they'd like to do, a timer is displayed, showing 1 minute. The user then can start the timer and either random maths questions are presented or random images where the user must spell the name of the image. When the timer reaches zero, a final tally is presented and can be viewed in a leaderboard, which I save in local storage.
+So, I stuck to the original idea, the user can choose either maths (addition or subtraction) or spelling. After choosing which challenge they'd like to do, a timer is displayed, showing 1 minute. The user then can start the timer and either random maths questions are presented or random images where the user must spell the name of the image. When the timer reaches zero, a final tally is presented and can be viewed in a leaderboard, which I save in local storage.
 
 # Features
 
@@ -18,7 +18,7 @@ So, I stuck to the original idea, the user has a choice of doing maths (addition
 - Top scores, which can be sorted by position (default) and by date.
 - Random colours on the timer and the username.
 - Audio: sounds are played for correct/incorrect answers, also, sounds at the beginning and end of a challenge.
-- Uses unsplash-js for image searches used in spelling challenges. A word is randomly selected from an array and an image search is performed.
+- Uses unsplash-js API for image searches used in spelling challenges. A word is randomly selected from an array and an image search is performed.
 
 # How it works
 

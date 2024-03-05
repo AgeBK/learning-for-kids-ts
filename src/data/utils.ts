@@ -1,6 +1,4 @@
 const getRecords = (strLocation: string): RecordProps[] => {
-  console.log(strLocation);
-
   let records: RecordProps[] = [];
   const recordString = localStorage.getItem(strLocation);
   if (recordString) {

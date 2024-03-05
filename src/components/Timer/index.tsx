@@ -14,7 +14,7 @@ type TimerProps = {
 };
 
 const Timer = ({ step2, setStep2, setUserResults, finalise }: TimerProps) => {
-  const startTime: number = 10;
+  const startTime: number = 10; // secs
   const [time, setTime] = useState<number>(startTime);
   const countRef = useRef<number>(startTime);
   const [preTime, setPreTime] = useState<number>(0);
