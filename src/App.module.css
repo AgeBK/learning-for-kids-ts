@@ -1,0 +1,29 @@
+.container {
+  background: url("./img/numbers.jpg");
+  padding: 3rem;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  min-height: 100vh;
+}
+
+.spelling {
+  background: url("./img/alphabet.jpg");
+}
+
+.contInner {
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 35rem) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+}

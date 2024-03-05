@@ -1,0 +1,16 @@
+.subCont {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 2px 6px 6px #000;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 35rem) {
+  .subCont {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}

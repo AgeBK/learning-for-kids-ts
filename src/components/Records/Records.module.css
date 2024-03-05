@@ -1,0 +1,107 @@
+.recordContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.hdr {
+  font-size: 4rem;
+}
+
+.recordContainer span {
+  padding: 8px;
+  width: 12%;
+  display: inline-block;
+}
+
+.placed {
+  font-size: 1.5rem;
+}
+
+.recordHdrs {
+  text-transform: uppercase;
+}
+
+.correct {
+  color: #008000;
+}
+
+.wrong {
+  color: #f00;
+}
+
+.records span {
+  background-color: #000;
+  color: #fff;
+}
+
+.records:nth-child(even) span {
+  background-color: #111;
+}
+
+.allTotal {
+  color: #555;
+  font-size: 1rem;
+}
+
+.today {
+  color: #008000;
+}
+
+.records.current span {
+  background-color: #008000;
+  color: #000;
+}
+
+.records.champ span {
+  background-color: gold;
+  color: #000;
+}
+
+.current .today {
+  color: #000;
+}
+
+@media screen and (max-width: 70rem) {
+  .records span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 60rem) {
+  .recordContainer span {
+    width: 14%;
+  }
+  .recordContainer span.answered {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .hdr {
+    font-size: 3rem;
+  }
+  .recordContainer span {
+    width: 17%;
+  }
+
+  .recordContainer span.wrong {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 45rem) {
+  .recordContainer span {
+    width: 27%;
+  }
+
+  .recordContainer span.challenge,
+  .recordContainer span.date {
+    display: none;
+  }
+
+  .recordHdrs span {
+    font-size: 0.9rem;
+  }
+}

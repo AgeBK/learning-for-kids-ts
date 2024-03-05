@@ -1,0 +1,17 @@
+.hdr {
+  display: inline-block;
+}
+
+.input {
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 50rem) {
+  input {
+    width: 80%;
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+}
