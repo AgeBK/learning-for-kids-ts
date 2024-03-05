@@ -45,7 +45,8 @@ const Spelling = ({ submit, userResults, setIsError }: SpellingProps) => {
         query: randomAnimal,
         perPage: 5,
       })
-      .then(({ response: { results } }) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      .then(({ response: { results } }: any) => {
         const arr: DataProps[] = results.map(
           ({
             id,
