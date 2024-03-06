@@ -11,6 +11,7 @@ I want the user to be able to choose between either maths or spelling and either
 So, I stuck to the original idea, the user can choose either maths (addition or subtraction) or spelling. After choosing which challenge they'd like to do, a timer is displayed, showing 1 minute. The user then can start the timer and either random maths questions are presented or random images where the user must spell the name of the image. When the timer reaches zero, a final tally is presented and can be viewed in a leaderboard, which I save in local storage.
 
 Here's a link to the site: <a href="https://learning-for-kids-ts.netlify.app/">Learning for kids</a>
+
 Here's a link to the JavaScript version: <a href="https://github.com/AgeBK/learning-for-kids">GitHub</a>
 
 # Features
