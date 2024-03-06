@@ -6,6 +6,13 @@ import startBeeps from "../../audio/countdownStart.mp3";
 import fiveLeft from "../../audio/5toGo.mp3";
 import styles from "./Timer.module.css";
 
+// TIMER FLOW
+// time limit initially displayed (default 1:00)
+// user presses start button, time disappears, ready set go countdown appears (preTimer)
+// time limit reappears
+// setStep2 (display question)
+// checkTimer runs every second, updates current time left in ref, 5 second countdown, resets variables at 0
+
 type TimerProps = {
   step2: boolean;
   setStep2: (step2: boolean) => void;
@@ -25,13 +32,6 @@ const Timer = ({ step2, setStep2, setUserResults, finalise }: TimerProps) => {
   const [isStart, setIsStart] = useState<boolean>(false);
   const [complete, setComplete] = useState<boolean>(false);
   const secs: number = time % 60;
-
-  // TIMER FLOW
-  // time limit initially displayed (default 1:00)
-  // user presses start button, time disappears, ready set go countdown appears (preTimer)
-  // time limit reappears
-  // setStep2 (display question)
-  // checkTimer runs every second, updates current time left in ref, 5 second countdown, resets variables at 0
 
   useEffect(() => {
     if (isStart && !step2) {
